@@ -1,0 +1,26 @@
+<div class="container">
+    <h1 class="jumbotron text-center"> Quotes From Us To Us </h1>
+    <hr>
+    
+    <ol>
+      <div class="card-deck">
+        <div class="card" *ngFor='let quote of quotes;let i = index'>
+    
+          <div>
+            <li appHighlight>{{quote.submittedBy}}</li>
+            <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
+            <app-quote-details *ngIf='quote.showDescription' [quote]='quote'>
+            </app-quote-details>
+            <br>
+            <button class="btn btn-success"> like </button>
+            <button class="btn btn-danger"> dislike </button>
+          </div>
+        </div>
+      </div>
+    </ol>
+    <div class="container">
+        <app-quote-form (addQuote)='addNewQuote($event)'></app-quote-form>
+      </div>
+</div>
+
+
