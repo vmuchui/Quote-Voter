@@ -24,9 +24,9 @@ export class QuoteComponent implements OnInit {
 // tslint:disable-next-line: max-line-length
     new Quote ('Winston Churchill', 'Victor', 'Success is not final, failure is not fatal: it is the courage to continue that counts.', new Date(2019, 3, 26)),
   ];
-    // toogleDetails(index) {
-    // this.quotes[index].showDescription = !this.quotes[index].showDescription;
-    // }
+    toogleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    }
     // addNewQuote(quote) {
     //   let quoteLength = this.quotes.length;
     //   quote.id = quoteLength + 1;
