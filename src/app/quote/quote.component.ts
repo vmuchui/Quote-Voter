@@ -8,10 +8,10 @@ import {Quote} from '../quotes';
 export class QuoteComponent implements OnInit {
   @Input() quote: Quote;
   @Output() uppoll = new EventEmitter<boolean>();
-  // upvote = 0;
-  // downvote = 0;
-  // up() {
-  //  this.upvote = this.upvote + 1;
+  upvote = 0;
+  downvote = 0;
+  up() {
+   this.upvote = this.upvote + 1;
   }
 
   down() {
