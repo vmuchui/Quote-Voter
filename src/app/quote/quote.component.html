@@ -14,8 +14,13 @@
             <app-quote-details *ngIf='quote.showDescription' [quote]='quote'>
             </app-quote-details>
             <br>
-            <button id="like" class="btn btn-success card-footer"> like </button>
-            <button id="dislike" class="btn btn-danger card-footer"> dislike </button>
+            <button id="like" (click)='up()' class="btn btn-success card-footer"> like </button>
+            <br>
+            <span>This quote has {{upvote}} likes</span>
+            <br>
+            <button id="dislike" (click)='down()' class="btn btn-danger card-footer"> dislike </button>
+            <br>
+            <span>This quote has {{downvote}} dislikes</span>
           </div>
         </div>
       </div>

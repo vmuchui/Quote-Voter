@@ -11,6 +11,7 @@ h1 {
 }
 #like:hover{
   color: white;
+  box-shadow: 0 12px 6px 0 rgba(0,0,0,0.24), 0 17px, 50px, 0 rgba(0,0,0,0.19);
 }
 #dislike {
   color:  black;
