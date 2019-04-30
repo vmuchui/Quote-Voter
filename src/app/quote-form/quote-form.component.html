@@ -28,15 +28,16 @@
                     <p> Your name is Required</p>
                     
                 </div>
-
+                Display: {{newQuote.submittedBy}}
             </div>
             <div class="form-group">
                 <label for="submissionDate">Date: <input type='date' id="complete" [(ngModel)]='newQuote.submissionDate' name='submissionDate' #submissionDate='ngModel' required></label>
                
                 <div [hidden]="submissionDate.valid || submissionDate.pristine" class="alert alert-danger">
-                    <p> Your name is Required</p>
+                    <p> Submission Date is Required</p>
                     
                 </div>
+                Display: {{newQuote.submissionDate}}
             </div>
             <button type="Submit" class="btn btn-success btn-lg">Add Quote</button>
         </form>
