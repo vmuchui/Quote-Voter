@@ -12,16 +12,16 @@
             <li class="card-title card-header" appHighlight>{{quote.submittedBy}}</li>
             <button id="toogle" class="btn btn-primary card-body" (click)='toogleDetails(i)'>Toogle Details</button>
             <app-quote-details *ngIf='quote.showDescription' [quote]='quote'>
-            <!-- </app-quote-details>
+            </app-quote-details>
             <br>
             <button id="like" (click)='up()' class="btn btn-success card-footer"> like </button>
             <br>
             <span>This quote has {{upvote}} likes</span>
             <br>
-            <button id="dislike" (click)='down()' class="btn btn-danger card-footer"> dislike </button>
-            <br> -->
+            <!-- <button id="dislike" (click)='down()' class="btn btn-danger card-footer"> dislike </button>
+            <br> 
             <span>This quote has {{downvote}} dislikes</span>
-          </div>
+          </div> -->
         </div>
       </div>
     </ol>
