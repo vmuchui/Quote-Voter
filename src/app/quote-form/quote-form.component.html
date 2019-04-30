@@ -13,7 +13,7 @@
             </div>            
             <div class="form-group">
 
-                <label for="name">Author:<input type="text" class="form-control" id="name" [(ngModel)]='newQuote.author' name='name' #name='ngModel' required ></label>
+                <label for="name">Author:<input type="text" class="form-control" id="name" [(ngModel)]='newQuote.quote' name='name' #name='ngModel' required ></label>
                 <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                     <p> Name is Required</p>
                     
@@ -22,7 +22,7 @@
             </div>
             <div class="form-group">
 
-                <label for="name">Submitted By:<input type="text" class="form-control" id="name" [(ngModel)]='newQuote.quote' name='submittedBy' #submittedBy='ngModel' required></label>
+                <label for="name">Submitted By:<input type="text" class="form-control" id="name" [(ngModel)]='newQuote.author' name='submittedBy' #submittedBy='ngModel' required></label>
                 
                 <div [hidden]="submittedBy.valid || submittedBy.pristine" class="alert alert-danger">
                     <p> Your name is Required</p>
