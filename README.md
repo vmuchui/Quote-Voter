@@ -104,13 +104,14 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Support and Contact
 ---
 
--Mobile number: (+254) 717304712
+* Mobile number: (+254) 717304712
 
--Email Address: kaigongimuchui@gmail.com
+* Email Address: kaigongimuchui@gmail.com
 
--github-username: vmuchui
+* github-username: vmuchui
 
 ## Copyright & License
 ---
+MIT license
 
 (C) Victor Muchui 2019 Moringa School
