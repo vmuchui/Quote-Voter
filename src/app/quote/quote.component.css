@@ -1,0 +1,28 @@
+h1 {
+  font-family: 'Uncial Antiqua', cursive;
+  color: aqua;
+}
+.jumbotron {
+  background-color: black;
+  opacity: 0.78;
+}
+#like {
+  color: black;
+}
+#like:hover{
+  color: white;
+}
+#dislike {
+  color:  black;
+}
+#dislike:hover{
+  color: white;
+}
+#toogle:hover {
+  background-color: antiquewhite;
+  color: black;
+}
+.card-deck {
+  font-family: 'Kaushan Script', cursive;
+
+}

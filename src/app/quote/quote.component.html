@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css?family=Uncial+Antiqua" rel="stylesheet">
+
 <div class="container">
     <h1 class="jumbotron text-center"> Quotes From Us To Us </h1>
     <hr>
@@ -7,13 +9,13 @@
         <div class="card" *ngFor='let quote of quotes;let i = index'>
     
           <div>
-            <li appHighlight>{{quote.submittedBy}}</li>
-            <button class="btn btn-primary" (click)='toogleDetails(i)'>Toogle Details</button>
+            <li class="card-title card-header" appHighlight>{{quote.submittedBy}}</li>
+            <button id="toogle" class="btn btn-primary card-body" (click)='toogleDetails(i)'>Toogle Details</button>
             <app-quote-details *ngIf='quote.showDescription' [quote]='quote'>
             </app-quote-details>
             <br>
-            <button class="btn btn-success"> like </button>
-            <button class="btn btn-danger"> dislike </button>
+            <button id="like" class="btn btn-success card-footer"> like </button>
+            <button id="dislike" class="btn btn-danger card-footer"> dislike </button>
           </div>
         </div>
       </div>
